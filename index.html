@@ -766,96 +766,152 @@
     </footer>
 
     <script>
-        /**
-         * Global View Matrix Tab Switching Engine
-         */
-        function switchTab(targetViewName) {
-            // Locate all structural containers
-            const viewPanels = document.querySelectorAll('.tab-view');
-            const targetActionButtons = document.querySelectorAll('.tab-btn');
+    /**
+     * Route map for tab views <-> URL path segments
+     */
+    const tabRouteMap = {
+        home: '/',
+        individual: '/individual',
+        teamwork: '/teamwork',
+        personal: '/personal'
+    };
 
-            // Hide all views uniformly
-            viewPanels.forEach(panel => panel.classList.add('hidden'));
+    const routeTabMap = Object.fromEntries(
+        Object.entries(tabRouteMap).map(([tab, route]) => [route, tab])
+    );
 
-            // Deactivate styling states on all navigational tabs
-            targetActionButtons.forEach(btn => {
-                btn.classList.remove(
-                    'bg-white', 'dark:bg-editor-cardDark', 'text-slate-900', 'dark:text-white', 'shadow-sm', 'border', 'border-slate-200', 'dark:border-editor-borderDark',
-                    'text-slate-500', 'dark:text-slate-400'
-                );
-                btn.classList.add('text-slate-500', 'dark:text-slate-400');
-            });
+    /**
+     * Normalize path (remove trailing slash except root)
+     */
+    function normalizePath(path) {
+        if (!path) return '/';
+        if (path.length > 1 && path.endsWith('/')) return path.slice(0, -1);
+        return path;
+    }
 
-            // Make targeted container active
-            const visibleContainer = document.getElementById(`tab-view-${targetViewName}`);
-            if (visibleContainer) {
-                visibleContainer.classList.remove('hidden');
-            }
+    /**
+     * Resolve current URL path to a tab key
+     */
+    function getTabFromPath(pathname) {
+        const normalized = normalizePath(pathname);
+        return routeTabMap[normalized] || 'home';
+    }
 
-            // Apply strict operational state aesthetics to active element
-            const activeTabButton = document.getElementById(`tab-btn-${targetViewName}`);
-            if (activeTabButton) {
-                activeTabButton.classList.remove('text-slate-500', 'dark:text-slate-400');
-                activeTabButton.classList.add(
-                    'bg-white', 'dark:bg-editor-cardDark', 'text-slate-900', 'dark:text-white', 'shadow-sm', 'border', 'border-slate-200', 'dark:border-editor-borderDark'
-                );
-            }
-        }
+    /**
+     * Global View Matrix Tab Switching Engine
+     * @param {string} targetViewName
+     * @param {Object} options
+     * @param {boolean} options.pushHistory - whether to push a new history entry
+     */
+    function switchTab(targetViewName, { pushHistory = true } = {}) {
+        // Locate all structural containers
+        const viewPanels = document.querySelectorAll('.tab-view');
+        const targetActionButtons = document.querySelectorAll('.tab-btn');
 
-        /**
-         * Mobile Nav Controller Drops Toggle
-         */
-        function toggleMobileDropdown() {
-            const dropdownNode = document.getElementById('mobile-dropdown');
-            dropdownNode.classList.toggle('hidden');
-        }
+        // Hide all views uniformly
+        viewPanels.forEach(panel => panel.classList.add('hidden'));
 
-        /**
-         * System Theme Swapper Matrix Operations
-         */
-        function toggleThemeMode() {
-            const documentRootNode = document.documentElement;
-            const operationalSunDecal = document.getElementById('sun-node');
-            const operationalMoonDecal = document.getElementById('moon-node');
-
-            if (documentRootNode.classList.contains('dark')) {
-                documentRootNode.classList.remove('dark');
-                documentRootNode.classList.add('light');
-                operationalSunDecal.classList.add('hidden');
-                operationalMoonDecal.classList.remove('hidden');
-                localStorage.setItem('portfolio-theme-matrix', 'light');
-            } else {
-                documentRootNode.classList.remove('light');
-                documentRootNode.classList.add('dark');
-                operationalMoonDecal.classList.add('hidden');
-                operationalSunDecal.classList.remove('hidden');
-                localStorage.setItem('portfolio-theme-matrix', 'dark');
-            }
-        }
-
-        /**
-         * Lifecycle State Initialization Hook Setup Loading Procedures
-         */
-        window.addEventListener('DOMContentLoaded', () => {
-            // Check storage records to extract saved theme matrix styles
-            const validatedHistoricalTheme = localStorage.getItem('portfolio-theme-matrix') || 'light';
-            const documentRootNode = document.documentElement;
-            const operationalSunDecal = document.getElementById('sun-node');
-            const operationalMoonDecal = document.getElementById('moon-node');
-
-            documentRootNode.classList.remove('light', 'dark');
-            documentRootNode.classList.add(validatedHistoricalTheme);
-            
-            if (validatedHistoricalTheme === 'dark') {
-                operationalSunDecal.classList.remove('hidden');
-                operationalMoonDecal.classList.add('hidden');
-            } else {
-                operationalMoonDecal.classList.remove('hidden');
-                operationalSunDecal.classList.add('hidden');
-            }
-
-            // Route standard user target explicitly to index home panel layers
-            switchTab('home');
+        // Deactivate styling states on all navigational tabs
+        targetActionButtons.forEach(btn => {
+            btn.classList.remove(
+                'bg-white', 'dark:bg-editor-cardDark', 'text-slate-900', 'dark:text-white', 'shadow-sm', 'border', 'border-slate-200', 'dark:border-editor-borderDark',
+                'text-slate-500', 'dark:text-slate-400'
+            );
+            btn.classList.add('text-slate-500', 'dark:text-slate-400');
         });
-    </script>
+
+        // Make targeted container active
+        const visibleContainer = document.getElementById(`tab-view-${targetViewName}`);
+        if (visibleContainer) {
+            visibleContainer.classList.remove('hidden');
+        }
+
+        // Apply strict operational state aesthetics to active element
+        const activeTabButton = document.getElementById(`tab-btn-${targetViewName}`);
+        if (activeTabButton) {
+            activeTabButton.classList.remove('text-slate-500', 'dark:text-slate-400');
+            activeTabButton.classList.add(
+                'bg-white', 'dark:bg-editor-cardDark', 'text-slate-900', 'dark:text-white', 'shadow-sm', 'border', 'border-slate-200', 'dark:border-editor-borderDark'
+            );
+        }
+
+        // Push URL state for browser history/back-forward support
+        const nextPath = tabRouteMap[targetViewName] || '/';
+        const currentPath = normalizePath(window.location.pathname);
+
+        if (pushHistory && currentPath !== nextPath) {
+            history.pushState({ tab: targetViewName }, '', nextPath);
+        }
+    }
+
+    /**
+     * Mobile Nav Controller Drops Toggle
+     */
+    function toggleMobileDropdown() {
+        const dropdownNode = document.getElementById('mobile-dropdown');
+        dropdownNode.classList.toggle('hidden');
+    }
+
+    /**
+     * System Theme Swapper Matrix Operations
+     */
+    function toggleThemeMode() {
+        const documentRootNode = document.documentElement;
+        const operationalSunDecal = document.getElementById('sun-node');
+        const operationalMoonDecal = document.getElementById('moon-node');
+
+        if (documentRootNode.classList.contains('dark')) {
+            documentRootNode.classList.remove('dark');
+            documentRootNode.classList.add('light');
+            operationalSunDecal.classList.add('hidden');
+            operationalMoonDecal.classList.remove('hidden');
+            localStorage.setItem('portfolio-theme-matrix', 'light');
+        } else {
+            documentRootNode.classList.remove('light');
+            documentRootNode.classList.add('dark');
+            operationalMoonDecal.classList.add('hidden');
+            operationalSunDecal.classList.remove('hidden');
+            localStorage.setItem('portfolio-theme-matrix', 'dark');
+        }
+    }
+
+    /**
+     * Handle browser back/forward button navigation
+     */
+    window.addEventListener('popstate', () => {
+        const tabFromUrl = getTabFromPath(window.location.pathname);
+        switchTab(tabFromUrl, { pushHistory: false });
+    });
+
+    /**
+     * Lifecycle State Initialization Hook Setup Loading Procedures
+     */
+    window.addEventListener('DOMContentLoaded', () => {
+        // Check storage records to extract saved theme matrix styles
+        const validatedHistoricalTheme = localStorage.getItem('portfolio-theme-matrix') || 'light';
+        const documentRootNode = document.documentElement;
+        const operationalSunDecal = document.getElementById('sun-node');
+        const operationalMoonDecal = document.getElementById('moon-node');
+
+        documentRootNode.classList.remove('light', 'dark');
+        documentRootNode.classList.add(validatedHistoricalTheme);
+        
+        if (validatedHistoricalTheme === 'dark') {
+            operationalSunDecal.classList.remove('hidden');
+            operationalMoonDecal.classList.add('hidden');
+        } else {
+            operationalMoonDecal.classList.remove('hidden');
+            operationalSunDecal.classList.add('hidden');
+        }
+
+        // Initial route hydration from URL
+        const initialTab = getTabFromPath(window.location.pathname);
+
+        // Ensure current history state aligns with current route
+        history.replaceState({ tab: initialTab }, '', tabRouteMap[initialTab] || '/');
+
+        // Render initial tab without creating extra history entry
+        switchTab(initialTab, { pushHistory: false });
+    });
+</script>
 </body>
