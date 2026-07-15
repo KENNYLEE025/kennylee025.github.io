@@ -1,0 +1,10 @@
+<script>
+  (function () {
+    var redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath) {
+      sessionStorage.removeItem('redirectPath');
+      // Restore intended URL so client-side routing can render correct page
+      history.replaceState(null, '', redirectPath);
+    }
+  })();
+</script>
