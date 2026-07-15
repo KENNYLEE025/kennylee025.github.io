@@ -38,6 +38,13 @@
                             emerald: '#00FF66',
                             amber: '#FFD100',
                             fuchsia: '#FF007A',
+
+                            // Accessible light-mode counterparts
+                            cyanLight: '#005D69',
+                            emeraldLight: '#00652F',
+                            amberLight: '#7A5A00',
+                            fuchsiaLight: '#99004A',
+
                             bgDark: '#0B111E',
                             cardDark: '#151F32',
                             borderDark: '#22314D'
@@ -87,6 +94,107 @@
         .dark ::-webkit-scrollbar-thumb {
             background: rgba(255, 255, 255, 0.15);
             border-radius: 4px;
+        }
+
+        /*
+         * Accessible light-mode editor palette.
+         * These overrides preserve the brighter neon palette in dark mode
+         * while providing WCAG-friendly contrast against white and slate-50.
+         */
+        .light .text-editor-cyan {
+            color: #005D69;
+        }
+
+        .light .text-editor-emerald {
+            color: #00652F;
+        }
+
+        .light .text-editor-amber {
+            color: #7A5A00;
+        }
+
+        .light .text-editor-fuchsia {
+            color: #99004A;
+        }
+
+        .light .bg-editor-cyan {
+            background-color: #005D69;
+        }
+
+        .light .bg-editor-emerald {
+            background-color: #00652F;
+        }
+
+        .light .bg-editor-amber {
+            background-color: #7A5A00;
+        }
+
+        .light .bg-editor-fuchsia {
+            background-color: #99004A;
+        }
+
+        .light .border-editor-cyan {
+            border-color: #005D69;
+        }
+
+        .light .border-editor-emerald {
+            border-color: #00652F;
+        }
+
+        .light .border-editor-amber {
+            border-color: #7A5A00;
+        }
+
+        .light .border-editor-fuchsia {
+            border-color: #99004A;
+        }
+
+        .light .hover\:text-editor-cyan:hover {
+            color: #005D69;
+        }
+
+        .light .hover\:text-editor-emerald:hover {
+            color: #00652F;
+        }
+
+        .light .hover\:text-editor-amber:hover {
+            color: #7A5A00;
+        }
+
+        .light .hover\:text-editor-fuchsia:hover {
+            color: #99004A;
+        }
+
+        .light .hover\:border-editor-cyan:hover {
+            border-color: #005D69;
+        }
+
+        .light .hover\:border-editor-emerald:hover {
+            border-color: #00652F;
+        }
+
+        .light .hover\:border-editor-amber:hover {
+            border-color: #7A5A00;
+        }
+
+        .light .hover\:border-editor-fuchsia:hover {
+            border-color: #99004A;
+        }
+
+        .light .group:hover .group-hover\:text-editor-cyan {
+            color: #005D69;
+        }
+
+        .light .group:hover .group-hover\:text-editor-emerald {
+            color: #00652F;
+        }
+
+        .light .group:hover .group-hover\:text-editor-amber {
+            color: #7A5A00;
+        }
+
+        .light .group:hover .group-hover\:text-editor-fuchsia {
+            color: #99004A;
         }
     </style>
 </head>
