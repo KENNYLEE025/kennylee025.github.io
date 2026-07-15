@@ -114,7 +114,7 @@
 
             <div class="flex items-center space-x-2">
                 <button onclick="toggleThemeMode()"
-                    class="p-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark hover:text-editor-cyan transition-colors flex items-center justify-c[...]
+                    class="p-2 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark hover:text-editor-cyan transition-colors flex items-center justify-center w-8 h-8"
                     title="Toggle Theme Matrix">
                     <svg id="sun-node" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         viewBox="0 0 24 24">
@@ -159,7 +159,731 @@
     <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-8 md:py-12">
 
         <section id="tab-view-home" class="tab-view space-y-12">
-[...]
+            <div
+                class="bg-white dark:bg-editor-cardDark/60 border border-slate-200 dark:border-editor-borderDark/80 rounded-xl p-6 md:p-10 relative overflow-hidden shadow-sm backdrop-blur-sm">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-editor-cyan/5 rounded-bl-full pointer-events-none"></div>
+                <div class="absolute bottom-3 right-3 flex space-x-2 text-slate-300 dark:text-slate-600 font-mono text-[10px] select-none">
+                    <span>GRID_SNAP: ON</span><span>X_COORD: 045</span><span>Y_COORD: 180</span>
+                </div>
+
+                <div class="grid md:grid-cols-5 gap-8 items-center">
+                    <div class="md:col-span-3 space-y-6">
+                        <div
+                            class="inline-flex items-center space-x-2 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 px-3 py-1 rounded-full text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+                            <span class="w-1.5 h-1.5 rounded-full bg-editor-emerald animate-pulse"></span>
+                            <span>Available For Junior Game Developer Tracks</span>
+                        </div>
+
+                        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+                            Hi, I'm <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300">Kenny
+                                Lee</span>.
+                        </h1>
+
+                        <p class="text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                            A focused <strong class="text-slate-900 dark:text-white font-semibold">Game Developer</strong> specializing in creating intuitive
+                            architectural interfaces, highly scalable development tool logic, adaptable gameplay execution loops, and crisp technical designs.
+                        </p>
+
+                        <div class="flex flex-wrap gap-3 pt-1">
+                            <a href="https://github.com/KENNYLEE025" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-white text-xs font-mono font-medium tracking-tight transition-colors shadow-sm">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.508.069-.508 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                </svg>
+                                <span>GITHUB_NODE</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kenny-lee-332528258/" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg bg-[#0077B5] text-white hover:bg-[#006297] text-xs font-mono font-medium tracking-tight transition-colors shadow-sm">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                <span>LINKEDIN_CONNECT</span>
+                            </a>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <div
+                                class="p-3 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-editor-borderDark rounded-lg flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-editor-cyan shadow-[0_0_6px_rgba(0,234,255,0.6)]"></div>
+                                <span class="text-xs font-mono font-medium">UI/UX Programming</span>
+                            </div>
+                            <div
+                                class="p-3 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-editor-borderDark rounded-lg flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-editor-emerald shadow-[0_0_6px_rgba(0,255,102,0.6)]"></div>
+                                <span class="text-xs font-mono font-medium">Tools Workflow Logic</span>
+                            </div>
+                            <div
+                                class="p-3 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-editor-borderDark rounded-lg flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-editor-amber shadow-[0_0_6px_rgba(255,209,0,0.6)]"></div>
+                                <span class="text-xs font-mono font-medium">Gameplay Loops</span>
+                            </div>
+                            <div
+                                class="p-3 bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-editor-borderDark rounded-lg flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-editor-fuchsia shadow-[0_0_6px_rgba(255,0,122,0.6)]"></div>
+                                <span class="text-xs font-mono font-medium">Technical Blueprinting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <div
+                            class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl p-4 shadow-sm overflow-hidden">
+                            <div
+                                class="aspect-square rounded-lg bg-slate-100 dark:bg-editor-bgDark flex items-center justify-center border border-slate-200 dark:border-slate-800 relative group overflow-hidden">
+                                <img src="images/Portfolio-Image.png" alt="Kenny Lee - Profile Picture"
+                                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition duration-300">
+                                <div class="absolute bottom-2 right-2 bg-slate-900/80 text-white font-mono text-[10px] px-2 py-1 rounded backdrop-blur">
+                                    Portfolio-Image.png
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="font-mono text-xs uppercase tracking-widest text-slate-400 flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-editor-cyan"></span>
+                    <span>Workspace Directory Links</span>
+                </h3>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <button onclick="switchTab('individual')"
+                        class="p-4 bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl text-left hover:border-editor-cyan transition-all group shadow-sm">
+                        <div class="text-xs font-mono text-slate-400 group-hover:text-editor-cyan mb-1">01 / REPOSITORY</div>
+                        <div class="font-bold text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                            <span>Individual Work</span>
+                            <span class="text-editor-cyan opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                        </div>
+                    </button>
+
+                    <button onclick="switchTab('teamwork')"
+                        class="p-4 bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl text-left hover:border-editor-emerald transition-all group shadow-sm">
+                        <div class="text-xs font-mono text-slate-400 group-hover:text-editor-emerald mb-1">02 / PRODUCTION</div>
+                        <div class="font-bold text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                            <span>Teamwork Milestones</span>
+                            <span class="text-editor-emerald opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                        </div>
+                    </button>
+
+                    <button onclick="switchTab('personal')"
+                        class="p-4 bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl text-left hover:border-editor-amber transition-all group shadow-sm">
+                        <div class="text-xs font-mono text-slate-400 group-hover:text-editor-amber mb-1">03 / ARCHIVE</div>
+                        <div class="font-bold text-sm text-slate-900 dark:text-white flex items-center justify-between">
+                            <span>Personal Vault</span>
+                            <span class="text-editor-amber opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="space-y-4 pt-4">
+                <h3 class="font-mono text-xs uppercase tracking-widest text-slate-400 flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-editor-cyan"></span>
+                    <span>00 / ROOT_BIOGRAPHY</span>
+                </h3>
+
+                <div
+                    class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl p-6 md:p-8 space-y-6 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-editor-cyan/5 rounded-bl-full pointer-events-none"></div>
+
+                    <div class="space-y-4 text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-4xl">
+                        <p>
+                            I am a current Guildhall student pursuing a master’s degree in game design specializing in <strong
+                                class="text-slate-900 dark:text-white font-semibold">Software Development</strong> at Southern Methodist University (SMU). I
+                            have acquired my bachelor’s degree in computer science at the University of Texas at Dallas. My current work is focused on <strong
+                                class="text-slate-900 dark:text-white font-semibold">User Interfaces and Gameplay Systems</strong> with an emphasis on User
+                            Experience and accessibility.
+                        </p>
+                        <p>
+                            Part of my passion to pursuing a dream of mine is inspired by two games that I have played throughout my life: <span
+                                class="text-editor-cyan font-medium">Geometry Dash</span> and <span class="text-editor-emerald font-medium">Minecraft</span>.
+                            While different in gameplay, the level designing system was what intrigued me to delve deeper in the frameworks and the backend of
+                            how games are developed.
+                        </p>
+                        <p>
+                            Outside SMU Guildhall, I enjoy playing the piano as it has been a hobby of mine for nearly my entire life (<span
+                                class="font-mono">23+ years</span> and counting). I love to arrange music, whether it be improvising a favorite song of mine or
+                            just mindlessly creating unique patterns and tunes while I play around. Basketball is another hobby of mine; while I’m not the
+                            greatest, it’s always good to put in some competition whether it be head-to-head or team vs team. I also enjoy reading books that
+                            keep me motivated despite adversity that comes around (my favorite is <em
+                                class="text-slate-800 dark:text-slate-200 not-italic font-medium">The Complete 101 Collection</em> by John C. Maxwell).
+                        </p>
+                    </div>
+
+                    <div
+                        class="pt-4 border-t border-slate-100 dark:border-editor-borderDark/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <p class="text-xs text-slate-400 font-mono">
+                            // Please feel free to navigate through my works around this page. Thank you for visiting my website!
+                        </p>
+                        <div class="flex space-x-2 self-start sm:self-auto">
+                            <span class="w-2 h-2 rounded-full bg-editor-cyan"></span>
+                            <span class="w-2 h-2 rounded-full bg-editor-emerald"></span>
+                            <span class="w-2 h-2 rounded-full bg-editor-amber"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- INDIVIDUAL WORK -->
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="tab-view-individual" class="tab-view hidden space-y-10">
+
+            <div class="border-b border-slate-200 dark:border-editor-borderDark pb-4">
+                <h2 class="text-2xl font-bold font-mono tracking-wide uppercase flex items-center space-x-2">
+                    <span class="w-3 h-3 bg-editor-cyan shadow-[0_0_6px_rgba(0,234,255,0.6)]"></span>
+                    <span>Individual Structural Engineering</span>
+                </h2>
+                <p class="text-sm text-slate-500 mt-1">Detailed structural features, core engine implementation loops, and technical tool tracking.</p>
+            </div>
+
+            <div class="space-y-12">
+
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <!-- Project Card: GeoDash -->
+                <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl p-6 shadow-sm space-y-6">
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">GeoDash - DFS (Work in Progress)</h3>
+                            <span
+                                class="px-2 py-0.5 text-[10px] font-mono bg-cyan-50 dark:bg-cyan-950/40 text-cyan-600 dark:text-cyan-400 border border-cyan-200 dark:border-cyan-800/40 rounded">WIP</span>
+                        </div>
+                        <p class="text-sm font-mono text-slate-400 mt-1">GeoDash: Simple 2D Rhythmic Platformer</p>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        An individual development sandbox slot heavily inspired by the architecture of Geometry Dash. The primary development vector focuses
+                        tightly on implementing core level-editor node hierarchies, structured canvas-editor snapping frameworks, and fine-tuning rigorous
+                        collision/response physics ticks. Built meticulously to test custom mechanics loops and visual coordinate mapping tools.
+                    </p>
+
+                    <div class="space-y-2">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400">[ Sandbox System Capture ]</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div
+                                class="aspect-video bg-slate-100 dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-editor-borderDark flex flex-col items-center justify-center p-4 text-center">
+                                <svg class="w-6 h-6 text-slate-300 dark:text-slate-700 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span class="text-[11px] font-mono text-slate-400">GeoDash Architecture Capture Placeholder</span>
+                            </div>
+                            <div
+                                class="aspect-video bg-slate-100 dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-editor-borderDark flex flex-col items-center justify-center p-4 text-center">
+                                <svg class="w-6 h-6 text-slate-300 dark:text-slate-700 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                </svg>
+                                <span class="text-[11px] font-mono text-slate-400">Node Hierarchy Stream Placeholder</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-2 border-t border-slate-100 dark:border-editor-borderDark/40">
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Tech
+                                Stack</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">C++</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Custom
+                                    Engine</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">XML
+                                    Data Storage</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Core
+                                Frameworks</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Rhythm
+                                    Framework</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Menu
+                                    Navigation</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Developer
+                                    Debugger Functionality</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Systems &
+                                Physics</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Physics
+                                    Ticks</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Rigid
+                                    Collision/Response</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Hitbox
+                                    Visualizer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <!-- Project Card: Doomenstein -->
+                <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl p-6 shadow-sm space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Doomenstein</h3>
+                        <p class="text-sm font-mono text-slate-400 mt-1">Doomenstein: 3D First-Person Shooter Custom Engine</p>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        A classic 3D pipeline simulation engineered inside a custom C++ game engine written entirely from scratch. This engineering execution
+                        handles raw system layer setups, including manual pointer tracking memory blocks, robust actor systems, complex custom AI logic paths,
+                        real-time bounding volume AABB collision routines, line-of-sight raycasts, native split-screen multiplayer viewport arrays, immersive 3D
+                        spatial sound tracking, operational map objective flows, and a localized secure leaderboards stack data layer.
+                    </p>
+
+                    <div class="space-y-2">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400">[ Sandbox System Capture ]</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div
+                                class="aspect-video bg-slate-900 rounded-lg border border-slate-200 dark:border-editor-borderDark overflow-hidden shadow-inner">
+                                <img src="images/Doomenstein_2.gif" alt="Doomenstein Gameplay Frame Capture 1" class="w-full h-full object-cover">
+                            </div>
+                            <div
+                                class="aspect-video bg-slate-900 rounded-lg border border-slate-200 dark:border-editor-borderDark overflow-hidden shadow-inner">
+                                <img src="images/Doomenstein_1.png" alt="Raycast / Diagnostics Flow" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grouped Categorized Recruiter Chips -->
+                    <div class="space-y-4 pt-2 border-t border-slate-100 dark:border-editor-borderDark/40">
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Tech
+                                Stack</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">C++</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Custom
+                                    C++ Engine</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">DirectX11</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">XML
+                                    Data-Driven Maps</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Perforce
+                                    (P4V)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Rendering &
+                                World Systems</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Indexed
+                                    Mesh Rendering</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">VertexPCUTBN
+                                    Pipeline</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Billboarded
+                                    Sprite Actors</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Skybox
+                                    Atlas Mapping</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Image-Based
+                                    Biomes</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Gameplay &
+                                Debug Systems</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Actor
+                                    Handles</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Enemy
+                                    AI Controllers</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Raycast
+                                    Collision Tests</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Split-Screen
+                                    Multiplayer</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">3D
+                                    Spatial Audio</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Objectives
+                                    & Leaderboards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <!-- Project Card: Starship -->
+                <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl p-6 shadow-sm space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Starship</h3>
+                        <p class="text-sm font-mono text-slate-400 mt-1">Starship: 2D Vector Space Arcade Custom Engine</p>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        A vector-feel execution environment crafted explicitly to explore immediate gameplay loops and kinetic controller feel. By engineering
+                        direct screen space rendering coordinates and drawing graphic shapes dynamically into frame arrays, the workspace decouples mechanics
+                        testing entirely from finished 2D/3D texture sets, allowing rapid verification of physics variables and custom firing tracking.
+                    </p>
+
+                    <div class="space-y-2">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400">[ Sandbox System Capture ]</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div
+                                class="aspect-video bg-slate-900 rounded-lg border border-slate-200 dark:border-editor-borderDark overflow-hidden shadow-inner">
+                                <img src="images/Starship_2.gif" alt="Starship Vector Layout Capture 1" class="w-full h-full object-cover">
+                            </div>
+                            <div
+                                class="aspect-video bg-slate-900 rounded-lg border border-slate-200 dark:border-editor-borderDark overflow-hidden shadow-inner">
+                                <img src="images/Starship_1.png" alt="Firing Analytics Log" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grouped Categorized Recruiter Chips -->
+                    <div class="space-y-4 pt-2 border-t border-slate-100 dark:border-editor-borderDark/40">
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Engine
+                                Architecture</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Custom
+                                    2D Engine</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Direct
+                                    Screen-Space Rendering</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Dynamic
+                                    Shape Drawing</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Math &
+                                Simulation</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Convex
+                                    Polygon Collision</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Intersection
+                                    Resolution</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Real-Time
+                                    Debug Visualizers</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Heatmap
+                                    & Telemetry Tools</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">UI &
+                                Tooling</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Sprite
+                                    Sheet Systems</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Bitmap
+                                    Font Rendering</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Adaptive
+                                    Layout Logic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                <!-- Project Card: General Visual Test -->
+                <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl p-6 shadow-sm space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">General Visual Tests</h3>
+                        <p class="text-sm font-mono text-slate-400 mt-1">Visual Test Simulations: Geometric Math Framework & Diagnostics</p>
+                    </div>
+
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        An expandable in-engine visual diagnostics utility configured to validate intricate mathematical expressions and convex hull spatial
+                        collisions. Features custom formatting and bitmap layout mechanisms built entirely on standalone architectural principles.
+                    </p>
+
+                    <div class="space-y-2">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400">[ Sandbox System Capture ]</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div
+                                class="aspect-video bg-slate-900 rounded-lg border border-slate-200 dark:border-editor-borderDark overflow-hidden shadow-inner">
+                                <img src="images/GVT_2.png" alt="General Visual Tests Layout Capture 1" class="w-full h-full object-cover">
+                            </div>
+                            <div
+                                class="aspect-video bg-slate-900 rounded-lg border border-slate-200 dark:border-editor-borderDark overflow-hidden shadow-inner">
+                                <img src="images/GVT_1.png" alt="Buffer Swapping Diagnostics" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-2 border-t border-slate-100 dark:border-editor-borderDark/40">
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Tech
+                                Stack</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">C++</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Custom
+                                    Engine Architecture</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Standalone
+                                    Core</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Math &
+                                Simulations</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Intricate
+                                    Geometric Math</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Convex
+                                    Hull Overlaps</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Spatial
+                                    Collision Vectors</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-mono font-bold tracking-wider text-slate-400 dark:text-slate-500 uppercase block mb-1.5">Systems &
+                                Layouts</span>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">In-Engine
+                                    Diagnostics</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Custom
+                                    Formatting Engine</span>
+                                <span
+                                    class="px-2.5 py-1 text-xs font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark text-slate-700 dark:text-slate-300">Bitmap
+                                    Layout Diagnostics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- TEAMWORK AND PRODUCTION -->
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="tab-view-teamwork" class="tab-view hidden space-y-10">
+            <div class="border-b border-slate-200 dark:border-editor-borderDark pb-4">
+                <h2 class="text-2xl font-bold font-mono tracking-wide uppercase flex items-center space-x-2">
+                    <span class="w-3 h-3 bg-editor-emerald shadow-[0_0_6px_rgba(0,255,102,0.6)]"></span>
+                    <span>Team Game Production & Hard Milestones</span>
+                </h2>
+                <p class="text-sm text-slate-500 mt-1">Cross-discipline pipeline integration, version tracking metrics, and studio production habits.</p>
+            </div>
+
+            <div class="space-y-4 pt-4">
+                <h3 class="font-mono text-xs uppercase tracking-widest text-slate-400 flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 bg-editor-emerald"></span>
+                    <span>Interpersonal System Pillars & Soft Habits</span>
+                </h3>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-5 bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl space-y-2">
+                        <h4 class="font-bold text-sm text-slate-950 dark:text-white flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-editor-cyan"></span>
+                            <span>UI Ownership & System Flow Integration</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I take comprehensive ownership of UI architecture layout assemblies from initial visual design passes down to precise data-binding
+                            hooks. I map clean interaction matrices to ensure layouts remain lightweight, responsive, and completely intuitive for players.
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl space-y-2">
+                        <h4 class="font-bold text-sm text-slate-950 dark:text-white flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-editor-emerald"></span>
+                            <span>Jira Scope Decomposition & Management</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I proactively break down large engine assignments into granular, scannable sub-tasks within our team tracking systems. This
+                            meticulous milestone definition keeps delivery dates predictable and minimizes sprint blockages.
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl space-y-2">
+                        <h4 class="font-bold text-sm text-slate-950 dark:text-white flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-editor-amber"></span>
+                            <span>Frictionless Team Dynamics & Adaptability</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I focus intensely on being straightforward and easy to work with across all departments. I loop in technical leads early when
+                            tackling unfamiliar source files, process peer review feedback constructively without friction, and actively help fellow developers
+                            to unblock tasks.
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl space-y-2">
+                        <h4 class="font-bold text-sm text-slate-950 dark:text-white flex items-center space-x-2">
+                            <span class="w-1.5 h-1.5 bg-editor-fuchsia"></span>
+                            <span>Cross-Discipline Handoff Workflow</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                            To ensure non-programmers can configure UI elements with confidence, I document critical data keys explicitly so that artists and
+                            designers can iterate on visual layers safely without risking unexpected compile breakages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-10">
+
+                <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl overflow-hidden shadow-sm">
+                    <div
+                        class="p-5 bg-slate-50 dark:bg-slate-900/40 border-b border-slate-200 dark:border-editor-borderDark flex justify-between items-center flex-wrap gap-2">
+                        <div>
+                            <span class="text-xs font-mono uppercase tracking-wider text-editor-emerald font-bold">Project Ref: TGP_II</span>
+                            <h3 class="text-xl font-bold text-slate-950 dark:text-white">Hamsterballin’</h3>
+                        </div>
+                        <span class="text-[10px] font-mono bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 px-2 py-0.5 rounded">Unreal Engine
+                            UI Focus</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-5 gap-6">
+                        <div class="md:col-span-3 space-y-4">
+                            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                Managed core interactive architectural structures using advanced <strong
+                                    class="text-slate-900 dark:text-white font-semibold">Unreal Engine UI programming</strong> toolsets. Specialized heavily in
+                                configuring robust decoupled application models via the <strong class="text-slate-900 dark:text-white font-semibold">CommonUI
+                                    ecosystem</strong>.
+                            </p>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                Personally engineered complex nested <strong class="text-slate-900 dark:text-white font-semibold">Common Activatable
+                                    Widgets</strong> to route dynamic gamepad and cursor overrides effortlessly, while implementing full localized gameplay
+                                state pause flows and robust interactive configuration sliders. Structured tracking requirements clearly across collaborative
+                                studio teams via Jira ticket sprints, managing rigorous branch operations with Perforce control streams.
+                            </p>
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <div
+                                class="w-full aspect-video bg-slate-100 dark:bg-slate-900 rounded-lg overflow-hidden border border-slate-200 dark:border-editor-borderDark shadow-inner relative">
+                                <iframe class="w-full h-full absolute inset-0 z-10" src="https://www.youtube.com/embed/izK3HATKSpQ"
+                                    title="Hamsterballin Trailer Embed" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl overflow-hidden shadow-sm">
+                    <div
+                        class="p-5 bg-slate-50 dark:bg-slate-900/40 border-b border-slate-200 dark:border-editor-borderDark flex justify-between items-center flex-wrap gap-2">
+                        <div>
+                            <span class="text-xs font-mono uppercase tracking-wider text-editor-emerald font-bold">Project Ref: MOMENTUM_V3</span>
+                            <h3 class="text-xl font-bold text-slate-950 dark:text-white">Renatus Network - V3 Update</h3>
+                        </div>
+                        <span class="text-[10px] font-mono bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 px-2 py-0.5 rounded">Java
+                            Multiplayer Server Focus</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-5 gap-6">
+                        <div class="md:col-span-3 space-y-4">
+                            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                In a team of 15 multidisciplinary volunteers, provided Quality Assurance (QA) testing and core gameplay loop verification across
+                                multiple complex game modes, supporting both critical backend systems and frontend user experience for a high-scale multiplayer
+                                gaming network.
+                            </p>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                On the <strong class="text-slate-900 dark:text-white font-semibold">backend architecture</strong> layer, contributed to the
+                                implementation of friends commands using <strong class="text-slate-900 dark:text-white font-semibold">Bungiecoord</strong> and
+                                systematically validated operational testing loops for the weekly Black Market shop systems. On the <strong
+                                    class="text-slate-900 dark:text-white font-semibold">frontend and level design</strong> pipelines, structured and balanced
+                                comprehensive parkour progression environments spanning 14 progressive levels, ensuring scaling jump difficulty, precise
+                                mechanics execution, and seamless visual environment decoration to optimize immersion. Managed tracking deliverables via <strong
+                                    class="text-slate-900 dark:text-white font-semibold">GitHub version control</strong> and <strong
+                                    class="text-slate-900 dark:text-white font-semibold">Miro boards</strong> to accelerate release velocity, driving a 300%
+                                player count surge on release day.
+                            </p>
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <div
+                                class="w-full aspect-video bg-slate-100 dark:bg-slate-900 rounded-lg overflow-hidden border border-slate-200 dark:border-editor-borderDark shadow-inner relative">
+                                <iframe class="w-full h-full absolute inset-0 z-10" src="https://www.youtube.com/embed/MrWt_H75eUg"
+                                    title="Renatus Network Trailer Embed" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl overflow-hidden shadow-sm">
+                    <div
+                        class="p-5 bg-slate-50 dark:bg-slate-900/40 border-b border-slate-200 dark:border-editor-borderDark flex justify-between items-center flex-wrap gap-2">
+                        <div>
+                            <span class="text-xs font-mono uppercase tracking-wider text-editor-emerald font-bold">Project Ref: TGP_I</span>
+                            <h3 class="text-xl font-bold text-slate-950 dark:text-white">ArachNOT</h3>
+                        </div>
+                        <span class="text-[10px] font-mono bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 px-2 py-0.5 rounded">Unity 2D
+                            Puzzle Focus</span>
+                    </div>
+                    <div class="p-6 grid md:grid-cols-5 gap-6">
+                        <div class="md:col-span-3 space-y-4">
+                            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                Collaborated closely inside a 4-person multidisciplinary engineering cell to deliver a polished 2D pixel-art puzzle platformer
+                                over an intense 3-month production sprint lifecycle. Took personal ownership of primary gameplay controllers, system juice, and
+                                mechanic polish.
+                            </p>
+                            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                Designed and coded the responsive <strong class="text-slate-900 dark:text-white font-semibold">player character
+                                    controller</strong> from scratch inside Unity, establishing tight physics-based motion routines, robust spatial collision
+                                checks, and clean animation state graph transitions. Authored core puzzle gameplay loops including interactive movable crates,
+                                physics platforms, pressure-pad gated systems, and unified camera screen fade managers. Documented technical guidelines inside
+                                the master <strong class="text-slate-900 dark:text-white font-semibold">Game Design Document (GDD)</strong> and captured
+                                operational captures to anchor production trailer marketing cycles.
+                            </p>
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <div
+                                class="w-full aspect-video bg-slate-100 dark:bg-slate-900 rounded-lg overflow-hidden border border-slate-200 dark:border-editor-borderDark shadow-inner relative">
+                                <iframe class="w-full h-full absolute inset-0 z-10" src="https://www.youtube.com/embed/SwW2MTjFZvY"
+                                    title="ArachNOT Trailer Embed" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- PERSONAL + VAULT -->
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
         <section id="tab-view-personal" class="tab-view hidden space-y-8">
     <div class="border-b border-slate-200 dark:border-editor-borderDark pb-4">
         <h2 class="text-2xl font-bold font-mono tracking-wide uppercase flex items-center space-x-2">
@@ -217,25 +941,6 @@
 
         <div class="md:col-span-3 space-y-6">
 
-            <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl p-5 md:p-6 shadow-sm space-y-4">
-                <div class="flex items-center justify-between gap-3">
-                    <span class="font-mono text-xs font-bold text-slate-500 uppercase tracking-wide">About Me</span>
-                    <span class="text-[10px] font-mono bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 px-2 py-0.5 rounded">Personal Profile</span>
-                </div>
-
-                <div class="space-y-3 text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                    <p>
-                        Hello, my name is Kenny Lee. I obtained my Bachelor's Degree in Computer Science from the University of Texas at Dallas, and I am now pursuing my passion as a game developer. I am a current graduate student at Southern Methodist University pursuing a Master’s degree in Interactive Technology with a specialization in Software Development.
-                    </p>
-                    <p>
-                        As a programmer, I have a strong interest in UI and tools programming, gameplay systems, and creating clear, responsive player experiences. My experience stems not only from learning C++, Unreal Engine, Blueprints, and Unity, but also within a team setting. Throughout my master's program, I am honored to be a part of such a great team, contributing to shipping a game, Hamsterballin'.
-                    </p>
-                    <p>
-                        Outside of my game development world, my hobbies include playing the piano, reading books, playing basketball, hitting the gym, and hiking. I also enjoy playing games from sandbox to rhythm-based (Minecraft and Geometry Dash). I love striving to improve myself in all areas of life and welcome opportunities that help me not only level up but also connect with people who share similar interests.
-                    </p>
-                </div>
-            </div>
-
                         <div class="bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl overflow-hidden shadow-sm">
                 <div class="p-4 bg-slate-50 dark:bg-slate-900/40 border-b border-slate-200 dark:border-editor-borderDark flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                     <span class="font-mono text-xs font-bold text-slate-500 uppercase tracking-wide">
@@ -257,5 +962,419 @@
                         </a>
                     </div>
                 </div>
-[...]
-</html>
+
+                <div class="bg-slate-50 dark:bg-slate-900/80 p-5 md:p-6 border-b border-slate-100 dark:border-slate-800">
+                    <div class="max-w-4xl mx-auto bg-white dark:bg-editor-cardDark border border-slate-200 dark:border-editor-borderDark rounded-xl p-5 md:p-6 shadow-sm space-y-7">
+                        
+                        <!-- Soft Skills -->
+                        <section class="space-y-3">
+                            <h4 class="font-mono text-[11px] uppercase tracking-widest text-slate-400">
+                                Soft Skills
+                            </h4>
+
+                            <div class="grid md:grid-cols-2 gap-3">
+                                <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                    <h5 class="text-sm font-semibold text-slate-900 dark:text-white">
+                                        Collaborative UI-Minded Programmer
+                                    </h5>
+                                    <p class="mt-1 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                                        Partners with designers, artists, programmers, and QA to turn gameplay requirements into readable, player-facing UI.
+                                    </p>
+                                </article>
+
+                                <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                    <h5 class="text-sm font-semibold text-slate-900 dark:text-white">
+                                        Clear Technical Communicator
+                                    </h5>
+                                    <p class="mt-1 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                                        Documents UI and Blueprint systems so teammates can understand, maintain, and safely iterate on implementation.
+                                    </p>
+                                </article>
+
+                                <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                    <h5 class="text-sm font-semibold text-slate-900 dark:text-white">
+                                        Proactive Production Teammate
+                                    </h5>
+                                    <p class="mt-1 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                                        Breaks down tasks, communicates blockers early, and keeps work aligned with milestones using Jira, Miro, Perforce, and GitHub.
+                                    </p>
+                                </article>
+
+                                <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                    <h5 class="text-sm font-semibold text-slate-900 dark:text-white">
+                                        Player Experience Focused
+                                    </h5>
+                                    <p class="mt-1 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                                        Builds systems with attention to usability, input flow, visual feedback, progression clarity, accessibility, and readability.
+                                    </p>
+                                </article>
+                            </div>
+                        </section>
+
+                        <!-- Experience -->
+                        <section class="space-y-3">
+                            <h4 class="font-mono text-[11px] uppercase tracking-widest text-slate-400">
+                                Experience
+                            </h4>
+
+                            <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                <div class="flex flex-wrap items-start justify-between gap-2">
+                                    <div>
+                                        <h5 class="font-semibold text-sm text-slate-900 dark:text-white">
+                                            HamsterBallin’ - User Interface Programmer
+                                        </h5>
+                                        <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                            Unreal Engine 5.7.1-5.7.4, Blueprint, Common UI, UMG, Perforce, Miro, Jira
+                                        </p>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-slate-400">
+                                        Jan-May 2026
+                                    </span>
+                                </div>
+
+                                <ul class="mt-2 space-y-1 text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
+                                    <li>Programmed and maintained graphics, localization, pause, tutorial, and usability-focused UI systems.</li>
+                                    <li>Created a reusable Blueprint settings system shared by the main menu and pause menu.</li>
+                                    <li>Collaborated across a 43-member team to gather requirements, resolve edge cases, and meet milestones.</li>
+                                    <li>Authored technical documentation for Blueprint UI systems to improve onboarding and maintainability.</li>
+                                </ul>
+                            </article>
+
+                            <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                <div class="flex flex-wrap items-start justify-between gap-2">
+                                    <div>
+                                        <h5 class="font-semibold text-sm text-slate-900 dark:text-white">
+                                            ArachNOT - Gameplay + UX Programmer
+                                        </h5>
+                                        <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                            Unity, C#, Visual Studio 2022, Perforce
+                                        </p>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-slate-400">
+                                        Oct-Dec 2025
+                                    </span>
+                                </div>
+
+                                <ul class="mt-2 space-y-1 text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
+                                    <li>Designed and implemented the player controller with physics movement, collision handling, animation states, and responsive input.</li>
+                                    <li>Built crates, moving platforms, pressure-pad gates, and screen-fade transitions for puzzle progression.</li>
+                                    <li>Contributed gameplay polish and iteration within a four-person production team.</li>
+                                </ul>
+                            </article>
+
+                            <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                <div class="flex flex-wrap items-start justify-between gap-2">
+                                    <div>
+                                        <h5 class="font-semibold text-sm text-slate-900 dark:text-white">
+                                            Internal Revenue Service - General Clerk + Streamline Assistant Lead
+                                        </h5>
+                                        <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                            Receipt and Control Operations, Document Retention Unit, employee training
+                                        </p>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-slate-400">
+                                        Feb 2024-Jun 2025
+                                    </span>
+                                </div>
+
+                                <ul class="mt-2 space-y-1 text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
+                                    <li>Sorted and routed incoming documents while supporting processing deadlines across multiple operations teams.</li>
+                                    <li>Trained new employees on mail streamlining and document classification procedures.</li>
+                                    <li>Supported storage, palletizing, shipment preparation, IT troubleshooting, and job-aid updates.</li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <!-- Projects -->
+                        <section class="space-y-3">
+                            <h4 class="font-mono text-[11px] uppercase tracking-widest text-slate-400">
+                                Projects
+                            </h4>
+
+                            <div class="grid md:grid-cols-2 gap-3">
+                                <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                    <h5 class="font-semibold text-sm text-slate-900 dark:text-white">
+                                        In-Engine Debugging & Geometry Tools
+                                    </h5>
+                                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                                        C++, Custom Game Engine, Visual Studio 2022, Perforce
+                                    </p>
+                                    <ul class="mt-2 space-y-1 text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
+                                        <li>Built extensible visual debugging tools for nearest-point, convex-polygon, and raycast tests.</li>
+                                        <li>Created interactive geometry manipulation, numeric inspection, and real-time edge-case validation.</li>
+                                        <li>Developed sprite, bitmap-font, text-layout, animation, and heatmap support systems.</li>
+                                    </ul>
+                                </article>
+
+                                <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                    <h5 class="font-semibold text-sm text-slate-900 dark:text-white">
+                                        QuantumParkour - Minecraft Server Plugin
+                                    </h5>
+                                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                                        Java, Gradle, Bukkit/Paper API, SQL, GitHub Actions
+                                    </p>
+                                    <ul class="mt-2 space-y-1 text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
+                                        <li>Developed parkour creation, checkpoints, block events, player statistics, configuration, and database persistence.</li>
+                                        <li>Added Gradle builds and a GitHub Actions pipeline for validation and repeatable artifact publishing.</li>
+                                        <li>Documented installation, configuration, commands, troubleshooting, and contribution workflows.</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </section>
+
+                        <!-- Volunteering -->
+                        <section class="space-y-3">
+                            <h4 class="font-mono text-[11px] uppercase tracking-widest text-slate-400">
+                                Volunteering
+                            </h4>
+
+                            <article class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                <div class="flex flex-wrap items-start justify-between gap-2">
+                                    <div>
+                                        <h5 class="font-semibold text-sm text-slate-900 dark:text-white">
+                                            Renatus Network - QA Tester & Level Design Contributor
+                                        </h5>
+                                        <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                            Java, Gradle, SQL, GitHub, Miro, Minecraft
+                                        </p>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-slate-400">
+                                        Jul 2023-Jun 2026
+                                    </span>
+                                </div>
+
+                                <ul class="mt-2 space-y-1 text-xs text-slate-700 dark:text-slate-300 list-disc pl-4">
+                                    <li>Provided QA and gameplay feedback across multiplayer parkour modes.</li>
+                                    <li>Tested backend systems, balanced competitive mechanics, and evaluated player-facing clarity.</li>
+                                    <li>Designed and tested 14-level parkour progression with difficulty, visual theming, and flow considerations.</li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <!-- Education and Skills -->
+                        <section class="grid md:grid-cols-2 gap-4">
+                            <div class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                <h4 class="font-mono text-[11px] uppercase tracking-widest text-slate-400 mb-2">
+                                    Education
+                                </h4>
+
+                                <p class="text-sm font-semibold text-slate-900 dark:text-white">
+                                    Southern Methodist University - SMU Guildhall
+                                </p>
+                                <p class="text-xs text-slate-700 dark:text-slate-300">
+                                    Master’s Degree in Interactive Technology - Software Development, Class of 2027
+                                </p>
+
+                                <p class="text-sm font-semibold text-slate-900 dark:text-white mt-3">
+                                    The University of Texas at Dallas
+                                </p>
+                                <p class="text-xs text-slate-700 dark:text-slate-300">
+                                    Bachelor of Science in Computer Science, Aug 2019-May 2023
+                                </p>
+                            </div>
+
+                            <div class="p-3 rounded-lg border border-slate-200 dark:border-editor-borderDark">
+                                <h4 class="font-mono text-[11px] uppercase tracking-widest text-slate-400 mb-2">
+                                    Technical Skills
+                                </h4>
+
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">C#</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">C++</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Java</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Python</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">SQL</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Unreal Engine</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Unity</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">UMG</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Common UI</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Blueprint</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Perforce</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">GitHub</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Jira</span>
+                                    <span class="px-2 py-1 text-[11px] font-mono rounded bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-editor-borderDark">Miro</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+    </main>
+
+    <footer class="border-t border-slate-200 dark:border-editor-borderDark bg-white dark:bg-editor-bgDark/40 py-6 transition-colors">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 text-xs font-mono text-slate-400">
+            <div class="flex items-center space-x-2">
+                <span class="w-2 h-2 rounded-full bg-editor-cyan"></span>
+                <span>Compiled using clean Tailwind elements</span>
+            </div>
+            <div>
+                <span>Kenny Lee &copy; 2026. All Rights Terminated in Sandbox.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * Route map for tab views <-> URL path segments
+         */
+        const tabRouteMap = {
+            home: '/',
+            individual: '/individual',
+            teamwork: '/teamwork',
+            personal: '/personal'
+        };
+
+        const routeTabMap = Object.fromEntries(
+            Object.entries(tabRouteMap).map(([tab, route]) => [route, tab])
+        );
+
+        /**
+         * Normalize path (remove trailing slash except root)
+         */
+        function normalizePath(path) {
+            if (!path) return '/';
+            if (path.length > 1 && path.endsWith('/')) return path.slice(0, -1);
+            return path;
+        }
+
+        /**
+         * Resolve current URL path to a tab key
+         */
+        function getTabFromPath(pathname) {
+            const normalized = normalizePath(pathname);
+            return routeTabMap[normalized] || 'home';
+        }
+
+        /**
+         * Global View Matrix Tab Switching Engine
+         * @param {string} targetViewName
+         * @param {Object} options
+         * @param {boolean} options.pushHistory - whether to push a new history entry
+         */
+        function switchTab(targetViewName, {
+            pushHistory = true
+        } = {}) {
+            // Locate all structural containers
+            const viewPanels = document.querySelectorAll('.tab-view');
+            const targetActionButtons = document.querySelectorAll('.tab-btn');
+
+            // Hide all views uniformly
+            viewPanels.forEach(panel => panel.classList.add('hidden'));
+
+            // Deactivate styling states on all navigational tabs
+            targetActionButtons.forEach(btn => {
+                btn.classList.remove(
+                    'bg-white', 'dark:bg-editor-cardDark', 'text-slate-900', 'dark:text-white', 'shadow-sm', 'border', 'border-slate-200',
+                    'dark:border-editor-borderDark',
+                    'text-slate-500', 'dark:text-slate-400'
+                );
+                btn.classList.add('text-slate-500', 'dark:text-slate-400');
+            });
+
+            // Make targeted container active
+            const visibleContainer = document.getElementById(`tab-view-${targetViewName}`);
+            if (visibleContainer) {
+                visibleContainer.classList.remove('hidden');
+            }
+
+            // Apply strict operational state aesthetics to active element
+            const activeTabButton = document.getElementById(`tab-btn-${targetViewName}`);
+            if (activeTabButton) {
+                activeTabButton.classList.remove('text-slate-500', 'dark:text-slate-400');
+                activeTabButton.classList.add(
+                    'bg-white', 'dark:bg-editor-cardDark', 'text-slate-900', 'dark:text-white', 'shadow-sm', 'border', 'border-slate-200',
+                    'dark:border-editor-borderDark'
+                );
+            }
+
+            // Push URL state for browser history/back-forward support
+            const nextPath = tabRouteMap[targetViewName] || '/';
+            const currentPath = normalizePath(window.location.pathname);
+
+            if (pushHistory && currentPath !== nextPath) {
+                history.pushState({
+                    tab: targetViewName
+                }, '', nextPath);
+            }
+        }
+
+        /**
+         * Mobile Nav Controller Drops Toggle
+         */
+        function toggleMobileDropdown() {
+            const dropdownNode = document.getElementById('mobile-dropdown');
+            dropdownNode.classList.toggle('hidden');
+        }
+
+        /**
+         * System Theme Swapper Matrix Operations
+         */
+        function toggleThemeMode() {
+            const documentRootNode = document.documentElement;
+            const operationalSunDecal = document.getElementById('sun-node');
+            const operationalMoonDecal = document.getElementById('moon-node');
+
+            if (documentRootNode.classList.contains('dark')) {
+                documentRootNode.classList.remove('dark');
+                documentRootNode.classList.add('light');
+                operationalSunDecal.classList.add('hidden');
+                operationalMoonDecal.classList.remove('hidden');
+                localStorage.setItem('portfolio-theme-matrix', 'light');
+            } else {
+                documentRootNode.classList.remove('light');
+                documentRootNode.classList.add('dark');
+                operationalMoonDecal.classList.add('hidden');
+                operationalSunDecal.classList.remove('hidden');
+                localStorage.setItem('portfolio-theme-matrix', 'dark');
+            }
+        }
+
+        /**
+         * Handle browser back/forward button navigation
+         */
+        window.addEventListener('popstate', () => {
+            const tabFromUrl = getTabFromPath(window.location.pathname);
+            switchTab(tabFromUrl, {
+                pushHistory: false
+            });
+        });
+
+        /**
+         * Lifecycle State Initialization Hook Setup Loading Procedures
+         */
+        window.addEventListener('DOMContentLoaded', () => {
+            // Check storage records to extract saved theme matrix styles
+            const validatedHistoricalTheme = localStorage.getItem('portfolio-theme-matrix') || 'light';
+            const documentRootNode = document.documentElement;
+            const operationalSunDecal = document.getElementById('sun-node');
+            const operationalMoonDecal = document.getElementById('moon-node');
+
+            documentRootNode.classList.remove('light', 'dark');
+            documentRootNode.classList.add(validatedHistoricalTheme);
+
+            if (validatedHistoricalTheme === 'dark') {
+                operationalSunDecal.classList.remove('hidden');
+                operationalMoonDecal.classList.add('hidden');
+            } else {
+                operationalMoonDecal.classList.remove('hidden');
+                operationalSunDecal.classList.add('hidden');
+            }
+
+            // Initial route hydration from URL
+            const initialTab = getTabFromPath(window.location.pathname);
+
+            // Ensure current history state aligns with current route
+            history.replaceState({
+                tab: initialTab
+            }, '', tabRouteMap[initialTab] || '/');
+
+            // Render initial tab without creating extra history entry
+            switchTab(initialTab, {
+                pushHistory: false
+            });
+        });
+    </script>
+</body>
